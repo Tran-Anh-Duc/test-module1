@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thực hành 3</title>
+</head>
+<body>
+
+
+<script>
+
+    let kiTuNguyenAm = ["a", "o", "e", "u", "i"]
+
+    function timSoAm(text) {
+        let count = 0
+        for (let letter of text.toLowerCase()) {
+            if (kiTuNguyenAm.includes(letter)) {
+                count++
+            }
+        }
+        document.write(`văn bản có ${count} kí tự Nguyen âm`)
+        return count
+    }
+
+    timSoAm(prompt('nap kí tự'))
+
+
+</script>
+
+
+</body>
+</html>
